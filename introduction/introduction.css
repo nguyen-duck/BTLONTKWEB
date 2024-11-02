@@ -1,0 +1,176 @@
+.abc
+{
+    text-align: center;
+    padding-top: 60px;
+}
+.dv
+{
+    padding-bottom: 10px;
+}
+.abcd
+{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px ;
+    padding-top:60px ;
+}
+.abcde
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding:0 100px ;
+}
+.abcdef
+{
+    display: flex;
+    justify-content: space-around;
+    padding:0 70px ;
+    margin-top: 80px;
+}
+.defg
+{
+    text-align: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.defgh img 
+{
+    width: 700px;
+    height: 440px;
+}
+
+.defghi
+{    
+    font-size: 20px;
+    padding-top: 150px;
+    background: #c5c2c2;
+    height :440px;
+}
+.vc
+{
+    text-align: center;
+}
+.all
+{
+    background-color: #b5acac;
+}
+.defg
+{
+    text-align: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.cn
+{
+    text-align: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.cnn img 
+{
+    width: 700px;
+    height: 440px;
+}
+
+.cnnnn
+{    
+    font-size: 20px;
+    padding-top: 150px;
+    background: #c5c2c2;
+    height :440px;
+}
+.ttdt
+{
+    text-align: center;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.ttdtt img 
+{
+    width: 700px;
+    height: 440px;
+}
+
+.ttdttt
+{    
+    font-size: 20px;
+    padding-top: 150px;
+    background: #c5c2c2;
+    height :440px;
+}
+.dtld
+{
+    text-align: center;
+    padding-top: 100px;
+}
+
+@media(max-width: 850px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .abcd {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .abcde .ss {
+        margin: 30px auto;
+    }
+
+    .abcde,
+    .abcdef {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .st {
+        margin: 20px auto;
+    }
+
+    .defg {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 0;
+
+    }
+
+    .defghi {
+        padding: 20px;
+        height: fit-content;
+    }
+
+    .cn, .ttdt {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cnnnn {
+        padding: 20px;
+        height: 150px;
+    }
+
+    .ttdttt {
+        padding: 25px;
+        height: 170px;
+    }
+
+}

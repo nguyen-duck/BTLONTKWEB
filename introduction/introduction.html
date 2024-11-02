@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="./introduction.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/icon/site.webmanifest">
+    <title>Về chúng tôi</title>
+    
+</head>
+<body>
+    <div class="main">
+        <nav class="header">
+            <ul class="nav">
+                <li><a href="../index.html"><img src="../assets/img/logo/z5950958826752_3d485d9d24fa8f5996ef26a055a0782c.jpg" alt=""></a></li>
+                <li class="beGone" onclick=showPrNavBg()><a class="hl" href="#">
+                    Sản phẩm
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z"/></svg>
+                </a></li>
+                <li class="beGone"><a href="./introduction.html">Về chúng tôi</a></li>
+                <li class="beGone"><a class="hl" href="#">Dịch vụ</a></li>
+                <li class="beGone"><a href="../index.html">Đăng nhập</a></li>
+                <li class="menu" onclick=showSubnav()><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+
+            <ul class="subnav">
+                <li onclick=hideSubnav()><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#">
+                    Sản phẩm
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="-100 -960 960 960" width="18px" fill="#BBBBBB"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                </a></li>
+                <li><a href="./introduction.html">Về chúng tôi</a></li>
+                <li><a href="">Dịch vụ</a></li>
+                <li><a href="../index.html">Đăng nhập</a></li>
+            </ul>
+
+            <div class="prnavbg">
+                <div class="prnav">
+                    <ul class="brand-nav">
+                        <li><a href="">
+                            Tất cả
+                        </a></li>
+                        <li><a class="sec-sedan" onclick=showSedan() href="#">
+                            Sedan
+                        </a></li>
+                        <li><a class="sec-hatchback" onclick=showHatchback() href="#">
+                            Hatchback
+                        </a></li>
+                        <li><a class="sec-SUV" onclick=showSUV() href="#">
+                            SUV
+                        </a></li>
+                        <li><a class="sec-coupe" onclick=showCoupe() href="#">
+                            Coupe
+                        </a></li>
+                    </ul>
+
+                    <div class="showcase sedan">
+                        <div class="car-item">
+                            <img src="../assets/img/cars/CamrySide.webp" alt="Toyota Camry">
+                            <h3>Giá từ 1.220.000.000 VNĐ</h3>
+                            <p>2025 Toyota Camry 2.0G</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/taycanSide.webp" alt="Porsche Taycan">
+                            <h3>Giá từ 4.620.000.000 VNĐ</h3>
+                            <p>2025 Porsche Taycan</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/nissanSide.webp" alt="Nissan Altima">
+                            <h3>Giá từ 1.200.000.000 VNĐ</h3>
+                            <p>2025 Nissan Altima</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/audiA6Side.webp" alt="Audi A6">
+                            <h3>Giá từ 2.299.000.000 VNĐ</h3>
+                            <p>2025 Audi A6</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/740iSide.webp" alt="BMW 740i">
+                            <h3>Giá từ 6.299.000.000 VNĐ</h3>
+                            <p>2025 BMW 740i Pure Excellence</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/s680Side.webp" alt="Mercedes Maybach S680">
+                            <h3>Giá từ 15.590.000.000 VNĐ</h3>
+                            <p>2024 Mercedes Maybach S680 4Matic</p>
+                        </div>
+                    </div>
+
+                    <div class="showcase SUV">
+                        <div class="car-item">
+                            <img src="../assets/img/cars/CR-VSide.webp" alt="Honda CR-V">
+                            <h3>Giá từ 1.109.000.000 VNĐ</h3>
+                            <p>2025 Honda CR-V G</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/explorerSide.webp" alt="Ford Explorer">
+                            <h3>Giá từ 2.099.000.000 VNĐ</h3>
+                            <p>2025 Ford Explorer 2.3L Ecoboost</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/Q5Side.webp" alt="Audi Q5">
+                            <h3>Giá từ 2.390.000.000 VNĐ</h3>
+                            <p>2024 Audi Q5 45 TFSI quattro</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/gls600Side.webp" alt="Mercedes-Maybach GLS 600  ">
+                            <h3>Giá từ 2.299.000.000 VNĐ</h3>
+                            <p>2024 Mercedes-Maybach GLS 600 4MATIC</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/x2Side.webp" alt="BMW X2">
+                            <h3>Giá từ 1.619.000.000 VNĐ</h3>
+                            <p>2024 BMW X2 sDrive20i M Sport </p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/MacanSide.webp" alt="Porsche Macan">
+                            <h3>Giá từ 3.150.000.000 VNĐ</h3>
+                            <p>2024 Porsche Macan</p>
+                        </div>
+                    </div>
+
+                    <div class="showcase hatchback">
+                        <div class="car-item">
+                            <img src="../assets/img/cars/civicSide.webp" alt="Honda Civic">
+                            <h3>Giá từ 2.399.000.000 VNĐ</h3>
+                            <p>2024 Honda Civic Type R 2.0 MT</p>
+                        </div>
+                    </div>
+
+                    <div class="showcase coupe">
+                        <div class="car-item">
+                            <img src="../assets/img/cars/911CarreraSSide.png" alt="Porsche 911 Carrera">
+                            <h3>Giá từ 8.530.000.000 VNĐ</h3>
+                            <p>2023 Porsche 911 Carrera S</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/718CaymanSSide.webp" alt="Porsche 718 Cayman">
+                            <h3>Giá từ 4.670.000.000 VNĐ</h3>
+                            <p>2025 Porsche 718 Cayman S</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/Rs5Side.webp" alt="Audi RS 5">
+                            <h3>Giá từ 1.900.000.000 VNĐ</h3>
+                            <p>2024 Audi RS 5 2.9 TFSI Quattro</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/gr86Side.webp" alt="Toyota Gr86">
+                            <h3>Giá từ 1.300.000.000 VNĐ</h3>
+                            <p>2024 Toyota Gr86</p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/GTRnismoSide.webp" alt="Nissan GT-R R35 Nismo">
+                            <h3>Giá từ 10.000.000.000 VNĐ</h3>
+                            <p>2024 Nissan GT-R R35 Nismo AWD </p>
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/img/cars/CLE53Side.webp" alt="Mercedes-Benz AMG CLE 53">
+                            <h3>Giá từ 4.000.000.000 VNĐ</h3>
+                            <p>2024 Mercedes-Benz AMG CLE 53 4MATIC+ Coupe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="all">
+            <div class="abc">
+                <h1>Giới Thiệu Chung Về Secondhand Cars</h1>
+                <div class="dv">
+                    <h3>Tên công ty:</h3>
+                    <p>Công ty Ô tô secondhand</p>
+                </div>
+                <div class="dv">
+                    <h3>Tên công ty:</h3>
+                    <p>Công ty Ô tô secondhand</p>
+                </div>
+                <div class="dv">
+                    <h3>Ban lãnh đạo</h3>
+                    <p>Tổng giám đốc: Ông Phùng Thủ Đức</p>
+                    <p>Phó Tổng giám đốc: Ông Văn Việt Hà</p>
+                </div>
+                <div class="dv">
+                    <h3>Lĩnh vực kinh doanh</h3>
+                    <p>Sản xuất và kinh doanh xe ô tô</p>
+                </div>
+            </div>
+            <div class="abcd">
+                <div class="abcde">
+                    <div class="ss">
+                        <h6>Thành Lập</h6>
+                        <p>1/12/2024</p>
+                    </div>
+                    <div class="ss">
+                        <h6>Vốn Pháp Định</h6>
+                        <p>700.000 USD</p>
+                    </div>
+                </div>  
+                <div class="abcdef">
+                    <div class="st">
+                        <h6>Nhân Sự</h6>
+                        <p>562</p>
+                    </div>
+                    <div class="st">
+                        <h6>Năng lực sản xuất hàng năm</h6>
+                        <p>21552 xe</p>
+                    </div>
+                    <div class="st">
+                        <h6>Đại lý chính thức tại 48 tỉnh thành</h6>
+                        <p>17</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vc">
+                <h1>TRỤ SỞ VÀ CHI NHÁNH</h1>
+            </div>
+            <div class="defg"> 
+                <div class="defgh">
+                    <img src="./sch.jpg">
+                </div>
+                <div class="defghi">
+                    <h3>
+                    Trụ Sở
+                    </h3>    
+                    <p> Địa chỉ: 30 Phan Xích Long, Phường 3,</p>  
+                    <p>   Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                    
+                    <p>  Tel:(84-4) 8688153</p> 
+                </div>
+            </div>
+        
+        <div class="cn"> 
+            <div class="cnn">
+                <img src="./cn.jpg">
+            </div>
+            <div class="cnnnn">
+                <h3>
+                Chi Nhánh
+                </h3>    
+                <p> Địa chỉ: 157/14 Hồ Văn Huệ, Phường 9,</p>
+                <p>   Quận Phú Nhuận,Thành phố Hồ Chí Minh</p>
+                
+                <p>  Tel:(84-8) 8406718</p> 
+            </div>
+        </div>
+            <div class="ttdt"> 
+                <div class="ttdtt">
+                    <img src="./ttdt.jpg">
+                </div>
+                <div class="ttdttt">
+                    <h3>
+                    Trung Tâm Đào Tạo
+                    </h3>    
+                    <p> Địa chỉ: 405/2 Xô Viết Nghệ Tĩnh, Phường 24,</p>
+                    <p>    Quận Bình Thành,Thành phố Hồ Chí Minh</p>
+        
+                    
+                    
+                    <p>  Tel:84-8-5117857</p> 
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="main-footer">
+            <!-- Công ty trách nhiệm hữu hạn là công ty trong đó các thành viên với 
+             số lượng hạn chế chỉ chịu trách nhiệm về các nghĩa vụ của công ty trong phạm 
+             vi số vốn cam kết góp vào công ty. Phần vốn cam kết góp 
+             vào công ty TNHH thể hiện trên điều lệ của công ty trong quá trình thành lập. -->
+                <div class="col-1">
+                    <h2>Công ty TNHH Secondhand Cars</h2>
+                    <ul>
+                        <li>Số GCNĐKDN: 0231230749</li>
+                        <li>Cấp lần đầu: Ngày 06/04/2005</li>
+                        <li>Đăng kí thay đổi lần thứ 19: Ngày 06/04/2024</li>
+                        <li>Cơ quan cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</li>
+                        <li>Địa chỉ: 258 Võ Chí Công, phường Xuân La, quận Tây Hồ, Hà Nội.</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h2>Đường dây nóng</h2>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -1100 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                            0523608286
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -1100 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                            0702098029
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -1100 960 960" width="24px" fill="white"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                            duckman6425@gmail.com
+                        </li>
+                        <li>Hotline hỗ trợ tài chính: 090605075</li>
+                        <li>Hotline bảo hiểm: 0704702841</li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h2>Đăng kí nhận bản tin</h2>
+                    <p>Đừng bỏ lỡ những tin tức của chúng tôi</p>
+                    <form class="frm" action="">
+                        <input type ="text" id="email" name="email" >
+                        <input type="button" onclick="successEmail()" value="Gửi"></input>
+                    </form>
+                    <p class="alert">Hãy nhập email của bạn</p>
+                    <p class="thank">Cảm ơn bạn đã đăng kí!</p>
+                </div>
+            </div>    
+
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100009680653670">
+                    <svg fill="white" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                viewBox="-143 145 512 512" xml:space="preserve">
+                        <g>
+	                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
+		                    c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4
+		                    c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8
+		                    c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4
+		                    c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"/>
+	                        <path d="M146.8,313.7c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3
+		                    c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H51.2v38.3h26.5v133h49.6v-133h39.3l2.9-38.3h-42.2v-29.9C127.3,317.4,136.5,313.7,146.8,313.7z"
+		                    />
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/trungduc.__/">
+                    <svg fill="white" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                viewBox="-143 145 512 512" xml:space="preserve">
+                        <g>
+	                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7
+		                    c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4
+		                    c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8
+		                    c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4
+		                    c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"/>
+	                        <path d="M191.6,273h-157c-27.3,0-49.5,22.2-49.5,49.5v52.3v104.8c0,27.3,22.2,49.5,49.5,49.5h157c27.3,0,49.5-22.2,49.5-49.5V374.7
+		                    v-52.3C241,295.2,218.8,273,191.6,273z M205.8,302.5h5.7v5.6v37.8l-43.3,0.1l-0.1-43.4L205.8,302.5z M76.5,374.7
+		                    c8.2-11.3,21.5-18.8,36.5-18.8s28.3,7.4,36.5,18.8c5.4,7.4,8.5,16.5,8.5,26.3c0,24.8-20.2,45.1-45.1,45.1C88,446.1,68,425.8,68,401
+		                    C68,391.2,71.2,382.1,76.5,374.7z M216.1,479.5c0,13.5-11,24.5-24.5,24.5h-157c-13.5,0-24.5-11-24.5-24.5V374.7h38.2
+		                    c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18.2-5.2-26.3h38.2V479.5z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/Javascript/style.js"></script>
+</body>
+</html>

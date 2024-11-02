@@ -1,0 +1,520 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+/* header css */
+
+.header {
+    background: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    position: fixed;
+    width: 100dvw;
+    z-index: 10;
+    top: 0;
+}
+
+.header .nav {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    line-height: 50px;
+}
+
+.nav img {
+    height: 50px;
+}
+
+nav .nav a,
+nav .subnav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #BBBBBB;
+}
+
+.nav a:hover,
+.subnav a:hover 
+{
+    color: white
+}
+
+.nav li:first-child {
+    margin-right: auto;
+}
+
+.subnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    z-index: 3;
+}
+
+.subnav li {
+    width: 100%;
+}
+
+.subnav a {
+    width: 100%;
+}
+
+.subnav li:first-child {
+    margin-top: 15px;
+}
+
+
+.menu {
+    display: none;
+}
+
+.prnavbg {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 3;
+}
+
+.prnav {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 47%;
+    width: 100%;
+    background-color: white;
+    padding-top: 1rem;
+    z-index: 4;
+}
+
+.prnav .brand-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+    margin: 0 2.4rem;
+} 
+
+.brand-nav a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.brand-nav li a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.prnav .bigshow .oddp,
+.prnav .showcaseAll .oddp {
+    padding-top: 25px;
+}
+
+.prnav .bigshow .odd,
+.prnav .showcaseAll .odd {
+    max-width: 302.95px;
+    padding-top: 6px;
+}
+
+.prnav .showcase {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.prnav .showcase::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.prnav .showcase a {
+    max-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    text-decoration: none;
+    color: #989898;
+}
+
+.prnav .showcase img {
+    max-height: 200px;
+}
+
+.car-item p {
+    text-align: center;
+}
+
+.prnav .SUV {
+    display: none;
+}
+
+.prnav .hatchback {
+    display: none;
+}
+
+.prnav .coupe {
+    display: none;
+}
+
+.prnav .sedan {
+    display: flex;
+}
+
+.showAll {
+    height: 85%;
+} 
+
+.bigshow {
+    width: 98%;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.prnav .bigshow::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.prnav .bigshow img {
+    max-height: 200px;
+}
+
+.prnav .bigshow a {
+    max-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    text-decoration: none;
+    color: #989898;
+}
+
+.bigshow .rr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.bigshow .scroll {
+    overflow-x: scroll;
+}
+
+.prnav .showcaseAll a:hover {
+    color: black;
+    background-color: rgba(219, 219, 219, 0.81);
+}
+
+.prnav .alll a:hover {
+    color: black;
+    background-color: rgba(219, 219, 219, 0.81);
+}
+
+
+
+
+
+
+.special-white {
+    color: white !important;
+}
+
+.special-black {
+    color: black !important;
+}
+
+
+/*end header css */
+
+
+
+/* slider css */
+.brand-title {
+    margin: 40px 1.4rem   ;
+}
+
+.slider {
+    width: 100%;
+    height: 94vh;
+    margin-bottom: 90px;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.brand-title {
+    /* position: absolute; */
+    bottom: -70px;
+    left: 1.4rem;
+}
+
+.slider .text {
+    position: absolute;
+    color: white;
+    bottom: 3rem;
+    left: 1.1rem;
+    width: fit-content;
+}
+
+.slider .text h1 {
+    margin-bottom: 15px;
+}
+
+.slider a {
+    border: 4px solid white;
+    color: white;
+    padding: 5px 0 5px 5px;
+    width: 235px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 7px;
+}
+
+/* end slider css */
+
+/*content css */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 99dvw;
+}
+
+.brand img {
+    width: 24.75dvw;
+    object-fit: contain;
+
+}
+
+.brand {
+    position: relative;
+}
+
+.brand a {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 15px;
+    left: 15px;
+    font-size: 20px;
+    border: solid white;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+
+}
+
+/* end content css */
+
+/*news css */
+
+.news .news-header {
+    margin: 40px 1.4rem;
+} 
+
+.contain-news ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%; 
+    list-style-type: none;  
+    margin: 1.2rem auto ;
+}
+
+.contain-news li {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.contain-news li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.contain-news ul a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+
+}
+
+.contain-news ul p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.news .news-note {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.2rem 2.1rem 1.9rem 0;
+
+
+
+}
+/*end news css*/
+
+/* footer css */
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+
+.main-footer {
+    display: flex;
+    justify-content:space-between;
+}
+
+.main-footer h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.main-footer .col-1,
+.main-footer .col-2,
+.main-footer .col-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 35px;
+
+}
+
+.main-footer .col-1 ul,
+.main-footer .col-2 ul {
+    list-style-type: none;
+}
+
+.main-footer button {
+    margin-left: 10px;
+    background-color: black;
+}
+
+.col-3 input:first-child {
+    width: 170px;
+}
+
+.col-3 .alert {
+    display: none;
+}
+
+.col-3 .thank {
+    display: none;
+}
+
+footer .social {
+    border-top: solid 1px #BBBBBB;
+    margin: 30px 4vw 0 4vw;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social svg{
+    padding: 10px 10px 0 10px;
+}
+
+@media(max-width: 850px) {
+    .beGone {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+    
+    .contain-news {
+        padding-top: 1.9rem;
+    }
+    
+    .contain-news ul {
+        display: flex;
+        flex-direction: column;
+        width: 90dvw;
+        margin: 0 auto;
+    
+    }
+    
+    .contain-news ul a {
+        display: flex;
+        flex-direction: row;
+            
+    }
+    
+    .contain-news ul img {
+        width: 40%;
+        
+    }
+
+    .contain-news ul p {
+        padding-left: 7px;
+        padding-top: 10px;
+    }
+}
+/* responsive */
+@media(max-width: 990px) {
+    .content {
+        width: 97.98dvw;
+    }
+
+    .brand img {
+        width: 48.99dvw;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+}
+
+@media(max-width: 400px) {
+    .subnav {
+        width: 100%;
+    }
+
+}
+
+
+
+

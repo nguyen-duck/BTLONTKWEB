@@ -1,0 +1,184 @@
+.news {
+    margin-bottom: 75px;
+}
+
+.news .article {
+    font-family: 'Noto Serif', serif;
+}
+
+.news .ads  {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 3rem 1.5rem 3rem;
+}
+
+.news .ads img {
+    width: 70vw;
+}
+
+article {
+    font-family: inherit;
+    width: 60dvw;
+}
+
+.article h1 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #000;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.article h1,
+.article h3, 
+.article p {
+    font-family: inherit;
+}
+
+.article .date {
+    font-weight: 300;
+    font-size:medium;
+    color: grey;
+
+}
+
+.article h3 {
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.article p {
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+.article .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px ;
+    font-family: inherit;
+    padding-top: 10px;
+
+}
+
+.article .photo img {
+    width: 80%;
+}
+
+.article .photo p {
+    font-size: 1rem;
+    color: grey;
+    padding: 5px 0;
+    font-family: inherit;
+}
+
+.might-care {
+    padding-top: 250px;
+    width: 30dvw;
+    font-family: inherit;
+}
+
+.might-care > p {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+}
+
+.might-care ul {
+    list-style-type: none;
+}
+
+.might-care ul li {
+    width: 92%;
+    padding: 15px;
+}
+
+.might-care ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.might-care ul p {
+    width: 25dvw;
+}
+
+.might-care ul img {
+    width: 25dvw;
+}
+
+.fin {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 1.7rem;
+    margin-right: 1.3rem;
+}
+
+.fin p:last-child {
+    background-color: rgba(203, 203, 203, 0.741);
+    border-radius: 4px; 
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.fin span {
+    font-weight: bold; 
+}
+
+@media(max-width:850px) {
+    .news {
+        margin-bottom: 1.6rem;
+    }
+
+    .ads img {
+        width: 80dvw;
+    }
+
+    .article {
+        display: block;
+    }
+
+    article {
+        width: 90dvw;
+        margin: auto auto;
+    }
+
+    .might-care {
+        padding-top: 1.9rem;
+    }
+
+    .might-care ul {
+        display: flex;
+        flex-direction: column;
+        width: 90dvw;
+        margin: 0 auto;
+
+    }
+
+    .might-care a {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .might-care ul img {
+        width: 40%;
+    
+    }
+
+    .might-care li p {
+        width: unset;
+    }
+
+
+
+}
